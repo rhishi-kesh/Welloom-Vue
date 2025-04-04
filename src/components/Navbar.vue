@@ -4,7 +4,7 @@ import GetStardBtn from '@/sm_components/GetStardBtn.vue';
 </script>
 
 <template>
-    <nav class="py-3 bg-[var(--primary-color)] text-white font-bold" :style="{ fontFamily: 'var(--font-inter)' }">
+    <nav class="py-3 bg-[var(--primary-color)] text-white font-bold">
         <div class="container flex justify-between items-center mx-auto">
             <div>
                 <img :src="Logo" alt="" width="120">
