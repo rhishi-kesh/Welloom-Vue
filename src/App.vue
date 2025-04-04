@@ -1,11 +1,13 @@
 <script setup>
 import Navbar from './components/Navbar.vue'
 import Hero from './components/Hero.vue';
+import HowItWork from './components/HowItWork.vue';
 </script>
 
 <template>
   <Navbar />
   <Hero />
+  <HowItWork />
 </template>
 
 <style>
@@ -29,6 +31,12 @@ h2 {
 
 h3 {
   font-size: 48px;
+}
+
+h4 {
+  font-size: 28px;
+  color: var(--primary-color);
+  font-family: serif;
 }
 
 p {
