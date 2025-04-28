@@ -2,12 +2,14 @@
 import Navbar from './components/Navbar.vue'
 import Hero from './components/Hero.vue';
 import HowItWork from './components/HowItWork.vue';
+import PriceingPlan from './components/PriceingPlan.vue';
 </script>
 
 <template>
   <Navbar />
   <Hero />
   <HowItWork />
+  <PriceingPlan />
 </template>
 
 <style>
