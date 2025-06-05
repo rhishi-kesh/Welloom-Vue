@@ -4,7 +4,7 @@ import StepCard from '@/sm_components/StepCard.vue';
 
 const steps = [
     {
-        icon: new URL('@/assets/image/step_icon-1.png', import.meta.url).href,
+        icon: new URL('@/assets/image/step_icon-3.png', import.meta.url).href,
         title: "Sign Up",
         subtitle: "After signing up, you will immediately have access to your own virtual album, where you'll find your unique QR code and link."
     },
@@ -14,7 +14,7 @@ const steps = [
         subtitle: "You can then share the QR code or link with your loved ones via messaging, email, or printed materials such as wedding invitations and greeting banners."
     },
     {
-        icon: new URL('@/assets/image/step_icon-3.png', import.meta.url).href,
+        icon: new URL('@/assets/image/step_icon-1.png', import.meta.url).href,
         title: "Upload",
         subtitle: "Guests can scan the QR code or visit the link to immediately start uploading moments captured at the wedding and leave messages-all without the need for an app or sign-up, making it easy to engage."
     },
@@ -22,7 +22,7 @@ const steps = [
 </script>
 
 <template>
-    <section class="bg-[var(--primary-color)] rounded-2xl py-10 my-15">
+    <section class="bg-[var(--primary-color)] rounded-4xl py-10 my-15">
         <div class="container mx-auto">
             <div class="title text-center">
                 <p class="!text-[var(--secondary-color)] !text-[16px]">Process</p>

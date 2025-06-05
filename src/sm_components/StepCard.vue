@@ -13,7 +13,7 @@ const props = defineProps({
         <div class="text-center flex justify-center items-center">
             <img :src="icon" alt="icon" width="50">
         </div>
-        <h4 class="my-3">{{ title }}</h4>
+        <h4 class="my-3 font-bold">{{ title }}</h4>
         <p>{{ subtitle }}</p>
     </div>
 </template>

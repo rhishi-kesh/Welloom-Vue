@@ -2,12 +2,16 @@
 import Navbar from './components/Navbar.vue'
 import Hero from './components/Hero.vue';
 import HowItWork from './components/HowItWork.vue';
+import Pricing from './components/Pricing.vue';
+import Faq from './components/Faq.vue';
 </script>
 
 <template>
   <Navbar />
   <Hero />
   <HowItWork />
+  <Pricing />
+  <Faq />
 </template>
 
 <style>
