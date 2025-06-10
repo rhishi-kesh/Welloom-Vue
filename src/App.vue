@@ -4,6 +4,7 @@ import Hero from './components/Hero.vue';
 import HowItWork from './components/HowItWork.vue';
 import Pricing from './components/Pricing.vue';
 import Faq from './components/Faq.vue';
+import Contact from './components/Contact.vue';
 </script>
 
 <template>
@@ -12,6 +13,7 @@ import Faq from './components/Faq.vue';
   <HowItWork />
   <Pricing />
   <Faq />
+  <Contact />
 </template>
 
 <style>
