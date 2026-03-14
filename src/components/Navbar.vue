@@ -1,13 +1,13 @@
 <script setup>
 import Logo from '@/assets/image/logo.png'
-import GetStardBtn from '@/sm_components/GetStardBtn.vue';
+import GetStartBtn from '@/sm_components/GetStartBtn.vue';
 </script>
 
 <template>
-    <nav class="py-3 bg-[var(--primary-color)] text-white font-bold">
+    <nav class="py-2 bg-[var(--primary-color)] text-white font-bold">
         <div class="container flex justify-between items-center mx-auto">
             <div>
-                <img :src="Logo" alt="" width="120">
+                <img :src="Logo" alt="" width="150">
             </div>
             <div>
                 <ul class="flex justify-center items-center gap-10">
@@ -38,7 +38,7 @@ import GetStardBtn from '@/sm_components/GetStardBtn.vue';
                     </svg>
                     <span class="block">Log in</span>
                 </a>
-                <GetStardBtn />
+                <GetStartBtn />
             </div>
         </div>
     </nav>

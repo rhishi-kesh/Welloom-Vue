@@ -5,6 +5,7 @@ import HowItWork from './components/HowItWork.vue';
 import Pricing from './components/Pricing.vue';
 import Faq from './components/Faq.vue';
 import Contact from './components/Contact.vue';
+import Footer from './components/Footer.vue';
 </script>
 
 <template>
@@ -14,6 +15,7 @@ import Contact from './components/Contact.vue';
   <Pricing />
   <Faq />
   <Contact />
+  <Footer />
 </template>
 
 <style>

@@ -29,7 +29,8 @@ const steps = [
                 <h2 class="text-white mt-1">
                     <b class="!text-white">How It <i>Works</i></b>
                 </h2>
-                <p class="!text-white w-100 md:w-[48%] m-auto mt-1">With just a few clicks, create a private album to
+                <p class="!text-white w-100 md:w-[35%] m-auto mt-1 !text-[16px]">With just a few clicks, create a
+                    private album to
                     capture,
                     store,
                     and

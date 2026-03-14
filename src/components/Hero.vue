@@ -1,14 +1,14 @@
 <script setup>
 import HeroImage from '@/assets/image/image4.png'
-import GetStardBtn from '@/sm_components/GetStardBtn.vue';
+import GetStartBtn from '@/sm_components/GetStartBtn.vue';
 </script>
 
 <template>
     <section>
         <div class="container mx-auto">
-            <div class="text-center py-8 w-[75%] m-auto">
+            <div class="text-center pt-24 pb-8 w-[70%] m-auto">
                 <h2 class="leading-[60px]">
-                    <b> QR code-powered <i>photo album</i> that lets guests <i>effortlessly</i> upload and
+                    <b>A QR code-powered <i>photo album</i> that lets guests <i>effortlessly</i> upload and
                         share memories in one <i>private, organized space</i>.
                     </b>
                 </h2>
@@ -27,7 +27,7 @@ import GetStardBtn from '@/sm_components/GetStardBtn.vue';
                 </h2>
 
                 <div class="mt-5">
-                    <GetStardBtn :icon="false" text="Get Started Now" />
+                    <GetStartBtn :icon="false" text="Get Started Now" />
                 </div>
 
             </div>

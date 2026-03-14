@@ -1,5 +1,5 @@
 <script setup>
-import GetStardBtn from '@/sm_components/GetStardBtn.vue';
+import GetStartBtn from '@/sm_components/GetStartBtn.vue';
 </script>
 
 <template>
@@ -27,7 +27,7 @@ import GetStardBtn from '@/sm_components/GetStardBtn.vue';
                     dicta obcaecati.</p>
             </div>
             <div class="mt-8">
-                <GetStardBtn :icon="false" text="Get Started Now" />
+                <GetStartBtn :icon="false" text="Get Started Now" />
             </div>
         </div>
     </section>

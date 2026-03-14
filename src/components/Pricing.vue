@@ -1,5 +1,5 @@
 <script setup>
-import GetStardBtn from "@/sm_components/GetStardBtn.vue";
+import GetStartBtn from "@/sm_components/GetStartBtn.vue";
 const steps = [
     {
         text: "QR code & private site",
@@ -30,7 +30,7 @@ const steps = [
                     <b class="text-[var(--primary-color)]">Our Pricing <i>Plan</i></b>
                 </h2>
             </div>
-            <div class="bg-[var(--secondary-color)] rounded-4xl p-20 mt-10">
+            <div class="bg-[var(--bg-color)] rounded-4xl p-20 mt-10">
                 <h2 class="text-center">$40</h2>
                 <p class="text-center">(5-Day Upload Access From Date Of Launch)</p>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 mt-5">
@@ -38,11 +38,11 @@ const steps = [
                         v-for="(step, index) in steps" :key="index">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="icon icon-tabler icons-tabler-outline icon-tabler-check text-green-500">
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-check text-green-500 font-weight-bold">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M5 12l5 5l10 -10" />
                         </svg>
-                        <p class="text-black">{{ step.text }}</p>
+                        <p class="text-black font-bold">{{ step.text }}</p>
                     </div>
                 </div>
                 <div class="text-center mt-15 w-100 md:w-[70%] m-auto">
@@ -52,7 +52,7 @@ const steps = [
                 </div>
             </div>
             <div class="mt-5 py-5">
-                <GetStardBtn :icon="false" text="Get Started Now" />
+                <GetStartBtn :icon="false" text="Get Started Now" />
             </div>
         </div>
     </section>

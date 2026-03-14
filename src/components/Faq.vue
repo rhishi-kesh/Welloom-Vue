@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
-import GetStardBtn from "@/sm_components/GetStardBtn.vue";
+import GetStartBtn from "@/sm_components/GetStartBtn.vue";
 const faqs = [
     {
         question: "Is it accessible?",
@@ -32,7 +32,8 @@ const faqs = [
             <div class="!bg-white p-5 mt-15 rounded-2xl">
                 <Accordion type="single" collapsible>
                     <AccordionItem :value="`item-${index}`" v-for="(faq, index) in faqs" :key="index">
-                        <AccordionTrigger>{{ faq.question }}</AccordionTrigger>
+                        <AccordionTrigger class="!text-xl text-stone-500 hover:text-[var(--primary-color)]">{{
+                            faq.question }}</AccordionTrigger>
                         <AccordionContent>
                             {{ faq.answer }}
                         </AccordionContent>
@@ -40,7 +41,7 @@ const faqs = [
                 </Accordion>
             </div>
             <div class="mt-5 py-5">
-                <GetStardBtn :icon="false" text="Get Started Now" />
+                <GetStartBtn :icon="false" text="Get Started Now" />
             </div>
         </div>
     </section>
