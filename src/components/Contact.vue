@@ -8,7 +8,7 @@ import GetStartBtn from "@/sm_components/GetStartBtn.vue";
         <div class="container mx-auto shadow p-10 rounded-2xl">
             <div class="title text-center">
                 <h2 class="text-white mt-1">
-                    <b class="text-[var(--primary-color)]">Contact Us</b>
+                    <b class="text-primary">Contact Us</b>
                 </h2>
             </div>
             <form action="" method="POST" class="w-full md:w-[70%] m-auto mt-10">

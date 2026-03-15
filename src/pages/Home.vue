@@ -25,12 +25,12 @@ import Footer from '../components/Footer.vue';
 
 b {
     font-family: serif;
-    color: var(--primary-color);
+    color: var(--color-primary);
 }
 
 i {
     font-family: var(--font-satisfy);
-    color: var(--secondary-color);
+    color: var(--color-secondary);
 }
 
 h2 {
@@ -43,14 +43,14 @@ h3 {
 
 h4 {
     font-size: 28px;
-    color: var(--primary-color);
+    color: var(--color-primary);
     font-family: serif;
 }
 
 p {
     font-size: 22px;
     line-height: 35.2px;
-    color: var(--black-color);
+    color: var(--color-black);
 }
 
 a {

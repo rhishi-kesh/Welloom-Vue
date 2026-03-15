@@ -6,7 +6,7 @@ import GetStartBtn from '@/sm_components/GetStartBtn.vue';
     <section class="py-10 my-15">
         <div class="container mx-auto">
             <div class="priceing-header text-center">
-                <p class="!text-[var(--secondary-color)]">Pricing</p>
+                <p class="text-secondary">Pricing</p>
                 <h2><b>Our Pricing</b> <i>Plan</i></h2>
             </div>
             <div class="mt-10 px-20 py-10 bg-[var(--secondary-color)] text-center rounded-4xl">

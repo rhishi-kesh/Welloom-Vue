@@ -15,52 +15,52 @@ import Logo from '@/assets/image/logo.png'
                 </p>
                 <form class="flex flex-col gap-4">
                     <div>
-                        <label for="first-name" class="font-bold text-(--primary-color)">First Name</label>
+                        <label for="first-name" class="font-bold text-primary">First Name</label>
                         <input type="text" id="first-name" placeholder="Enter First Name"
                             class="w-full border border-gray-300 rounded-lg px-3 py-3 mt-1" />
                     </div>
                     <div>
-                        <label for="last-name" class="font-bold text-(--primary-color)">Last Name</label>
+                        <label for="last-name" class="font-bold text-primary">Last Name</label>
                         <input type="text" id="last-name" placeholder="Enter Last Name"
                             class="w-full border border-gray-300 rounded-lg px-3 py-3 mt-1" />
                     </div>
                     <div>
-                        <label for="phone" class="font-bold text-(--primary-color)">Phone Number</label>
+                        <label for="phone" class="font-bold text-primary">Phone Number</label>
                         <input type="text" id="phone" placeholder="Enter Phone Number"
                             class="w-full border border-gray-300 rounded-lg px-3 py-3 mt-1" />
                     </div>
                     <div>
-                        <label for="email" class="font-bold text-(--primary-color)">Email Address</label>
+                        <label for="email" class="font-bold text-primary">Email Address</label>
                         <input type="email" id="email" placeholder="Enter Email Address"
                             class="w-full border border-gray-300 rounded-lg px-3 py-3 mt-1" />
                     </div>
                     <div>
-                        <label for="wedding-date" class="font-bold text-(--primary-color)">Select Your Wedding
+                        <label for="wedding-date" class="font-bold text-primary">Select Your Wedding
                             Date</label>
                         <input type="date" id="wedding-date"
                             class="w-full border border-gray-300 rounded-lg px-3 py-3 mt-1" />
                     </div>
                     <div>
-                        <label for="password" class="font-bold text-(--primary-color)">Password</label>
+                        <label for="password" class="font-bold text-primary">Password</label>
                         <input type="password" id="password" placeholder="Enter Password"
                             class="w-full border border-gray-300 rounded-lg px-3 py-3 mt-1" />
                     </div>
                     <div>
-                        <label for="confirm-password" class="font-bold text-(--primary-color)">Confirm Password</label>
+                        <label for="confirm-password" class="font-bold text-primary">Confirm Password</label>
                         <input type="password" id="confirm-password" placeholder="Confirm Password"
                             class="w-full border border-gray-300 rounded-lg px-3 py-3 mt-1" />
                     </div>
                     <button
-                        class="btn w-full bg-(--primary-color) py-4 px-4 text-white flex gap-2 justify-center rounded-4xl items-center mt-6"
+                        class="btn w-full bg-primary py-4 px-4 text-white flex gap-2 justify-center rounded-4xl items-center mt-6"
                         type="submit">
                         Sign Up
                         <RiArrowRightUpLine color="rgba(255,255,255,1)" />
                     </button>
                 </form>
                 <p class="text-center text-sm! text-gray-600 mt-4">Or Go to <router-link :to="{ name: 'home' }"
-                        class="font-bold text-(--primary-color) underline">Home</router-link></p>
+                        class="font-bold text-primary underline">Home</router-link></p>
                 <p class="text-center text-sm! text-gray-600 mt-8 md:mt-15">Already have an account? <router-link
-                        :to="{ name: 'login' }" class="font-bold text-(--primary-color) underline">Log In</router-link>
+                        :to="{ name: 'login' }" class="font-bold text-primary underline">Log In</router-link>
                 </p>
             </div>
         </div>

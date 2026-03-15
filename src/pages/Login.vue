@@ -15,27 +15,27 @@ import Logo from '@/assets/image/logo.png'
                 </p>
                 <form class="flex flex-col gap-4">
                     <div>
-                        <label for="email" class="font-bold text-(--primary-color)">Email Address</label>
+                        <label for="email" class="font-bold text-primary">Email Address</label>
                         <input type="email" id="email" placeholder="Enter Email Address"
                             class="w-full border border-gray-300 rounded-lg px-3 py-3 mt-1" />
                     </div>
                     <div>
-                        <label for="password" class="font-bold text-(--primary-color)">Password</label>
+                        <label for="password" class="font-bold text-primary">Password</label>
                         <input type="password" id="password" placeholder="Enter Password"
                             class="w-full border border-gray-300 rounded-lg px-3 py-3 mt-1" />
                     </div>
                     <p class="text-center text-sm! text-gray-600 my-2">Forgot your Password? <router-link
-                            :to="{ name: 'forgot-password' }" class="font-bold text-(--primary-color)">Click
+                            :to="{ name: 'forgot-password' }" class="font-bold text-primary">Click
                             Here</router-link></p>
                     <button
-                        class="btn w-full bg-(--primary-color) py-4 px-4 text-white flex gap-2 justify-center rounded-4xl items-center"
+                        class="btn w-full bg-primary py-4 px-4 text-white flex gap-2 justify-center rounded-4xl items-center"
                         type="submit">
                         Log In
                         <RiArrowRightUpLine color="rgba(255,255,255,1)" />
                     </button>
                 </form>
                 <p class="text-center text-sm! text-gray-600 mt-8">New User? <router-link :to="{ name: 'register' }"
-                        class="font-bold text-(--primary-color) underline">Create Account</router-link> </p>
+                        class="font-bold text-primary underline">Create Account</router-link> </p>
             </div>
         </div>
         <div class="hidden md:block bg-gray-200 h-screen relative">

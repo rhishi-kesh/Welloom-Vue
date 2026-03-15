@@ -22,10 +22,10 @@ const steps = [
 </script>
 
 <template>
-    <section class="bg-[var(--primary-color)] rounded-4xl py-10 my-15">
+    <section class="bg-primary rounded-4xl py-10 my-15">
         <div class="container mx-auto">
             <div class="title text-center">
-                <p class="!text-[var(--secondary-color)] !text-[16px]">Process</p>
+                <p class="text-secondary !text-[16px]">Process</p>
                 <h2 class="text-white mt-1">
                     <b class="!text-white">How It <i>Works</i></b>
                 </h2>

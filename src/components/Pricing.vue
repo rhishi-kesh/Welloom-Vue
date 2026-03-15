@@ -25,9 +25,9 @@ const steps = [
     <section class="bg-white py-10 my-15">
         <div class="container mx-auto">
             <div class="title text-center">
-                <p class="!text-[var(--secondary-color)] !text-[16px]">Pricing</p>
+                <p class="text-secondary !text-[16px]">Pricing</p>
                 <h2 class="text-white mt-1">
-                    <b class="text-[var(--primary-color)]">Our Pricing <i>Plan</i></b>
+                    <b class="text-primary">Our Pricing <i>Plan</i></b>
                 </h2>
             </div>
             <div class="bg-[var(--bg-color)] rounded-4xl p-20 mt-10">

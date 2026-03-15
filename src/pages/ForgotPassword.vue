@@ -13,12 +13,12 @@ import Logo from '@/assets/image/logo.png'
                 </p>
                 <form class="flex flex-col gap-4">
                     <div>
-                        <label for="email" class="font-bold text-(--primary-color)">Email Address</label>
+                        <label for="email" class="font-bold text-primary">Email Address</label>
                         <input type="email" id="email" placeholder="Enter Email Address"
                             class="w-full border border-gray-300 rounded-lg px-3 py-3 mt-1" />
                     </div>
                     <button
-                        class="btn w-full bg-(--primary-color) py-4 px-4 text-white flex gap-2 justify-center rounded-4xl mt-4 items-center"
+                        class="btn w-full bg-primary py-4 px-4 text-white flex gap-2 justify-center rounded-4xl mt-4 items-center"
                         type="submit">
                         Submit
                         <RiArrowRightUpLine color="rgba(255,255,255,1)" />

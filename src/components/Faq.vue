@@ -21,7 +21,7 @@ const faqs = [
 ]
 </script>
 <template>
-    <section class="bg-(--primary-color) rounded-4xl py-10 my-20">
+    <section class="bg-primary rounded-4xl py-10 my-20">
         <div class="container mx-auto">
             <div class="title text-center">
                 <h2 class="text-white mt-1">
@@ -32,7 +32,7 @@ const faqs = [
             <div class="bg-white! p-5 mt-15 rounded-2xl">
                 <Accordion type="single" collapsible>
                     <AccordionItem :value="`item-${index}`" v-for="(faq, index) in faqs" :key="index">
-                        <AccordionTrigger class="text-xl! text-stone-500 hover:text-(--primary-color)">{{
+                        <AccordionTrigger class="text-xl! text-stone-500 hover:text-primary">{{
                             faq.question }}</AccordionTrigger>
                         <AccordionContent>
                             {{ faq.answer }}

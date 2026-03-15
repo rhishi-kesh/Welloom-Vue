@@ -5,7 +5,7 @@ import { RiUserReceivedLine } from '@remixicon/vue';
 </script>
 
 <template>
-    <nav class="py-2 bg-(--primary-color) text-white font-bold">
+    <nav class="py-2 bg-primary text-white font-bold">
         <div class="container flex justify-between items-center mx-auto">
             <div>
                 <img :src="Logo" alt="" width="150">
