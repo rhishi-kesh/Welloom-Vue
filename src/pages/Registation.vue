@@ -57,7 +57,7 @@ import Logo from '@/assets/image/logo.png'
                         <RiArrowRightUpLine color="rgba(255,255,255,1)" />
                     </button>
                 </form>
-                <p class="text-center text-sm! text-gray-600 mt-2">Or Go to <router-link :to="{ name: 'home' }"
+                <p class="text-center text-sm! text-gray-600 mt-4">Or Go to <router-link :to="{ name: 'home' }"
                         class="font-bold text-(--primary-color) underline">Home</router-link></p>
                 <p class="text-center text-sm! text-gray-600 mt-8 md:mt-15">Already have an account? <router-link
                         :to="{ name: 'login' }" class="font-bold text-(--primary-color) underline">Log In</router-link>
