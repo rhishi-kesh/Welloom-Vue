@@ -1,6 +1,7 @@
 import Home from './pages/Home.vue'
 import Login from './pages/Login.vue'
 import Registation from './pages/Registation.vue'
+import ForgotPassword from './pages/ForgotPassword.vue'
 export const routes = [
     {
         path: '/',
@@ -16,6 +17,11 @@ export const routes = [
         path: '/register',
         component: Registation,
         name: 'register'
+    },
+    {
+        path: '/forgot-password',
+        component: ForgotPassword,
+        name: 'forgot-password'
     },
     {
         path: '/:pathMatch(.*)*',
