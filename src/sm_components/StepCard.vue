@@ -15,6 +15,6 @@ const props = defineProps({
             <RiCheckFill color="rgba(0,0,0,1)" class="font-bold" />
         </div>
         <h4 class="my-3 font-bold">{{ title }}</h4>
-        <p class="!text-[17px] !leading-7">{{ subtitle }}</p>
+        <p class="text-[17px]! leading-7!">{{ subtitle }}</p>
     </div>
 </template>

@@ -21,18 +21,18 @@ const faqs = [
 ]
 </script>
 <template>
-    <section class="bg-[var(--primary-color)] rounded-4xl py-10 my-20">
+    <section class="bg-(--primary-color) rounded-4xl py-10 my-20">
         <div class="container mx-auto">
             <div class="title text-center">
                 <h2 class="text-white mt-1">
-                    <b class="!text-white">Frequently Asked <i>Questions</i></b>
+                    <b class="text-white!">Frequently Asked <i>Questions</i></b>
                 </h2>
-                <p class="!text-white !text-base">Here are answers to some of our most frequently asked questions.</p>
+                <p class="text-white! text-base!">Here are answers to some of our most frequently asked questions.</p>
             </div>
-            <div class="!bg-white p-5 mt-15 rounded-2xl">
+            <div class="bg-white! p-5 mt-15 rounded-2xl">
                 <Accordion type="single" collapsible>
                     <AccordionItem :value="`item-${index}`" v-for="(faq, index) in faqs" :key="index">
-                        <AccordionTrigger class="!text-xl text-stone-500 hover:text-[var(--primary-color)]">{{
+                        <AccordionTrigger class="text-xl! text-stone-500 hover:text-(--primary-color)">{{
                             faq.question }}</AccordionTrigger>
                         <AccordionContent>
                             {{ faq.answer }}

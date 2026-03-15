@@ -7,7 +7,7 @@ import GetStartBtn from '@/sm_components/GetStartBtn.vue';
     <section>
         <div class="container mx-auto">
             <div class="text-center pt-24 pb-8 w-[70%] m-auto">
-                <h2 class="leading-[60px]">
+                <h2 class="leading-15">
                     <b>A QR code-powered <i>photo album</i> that lets guests <i>effortlessly</i> upload and
                         share memories in one <i>private, organized space</i>.
                     </b>

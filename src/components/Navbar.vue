@@ -5,7 +5,7 @@ import { RiUserReceivedLine } from '@remixicon/vue';
 </script>
 
 <template>
-    <nav class="py-2 bg-[var(--primary-color)] text-white font-bold">
+    <nav class="py-2 bg-(--primary-color) text-white font-bold">
         <div class="container flex justify-between items-center mx-auto">
             <div>
                 <img :src="Logo" alt="" width="150">
@@ -26,8 +26,8 @@ import { RiUserReceivedLine } from '@remixicon/vue';
                     </li>
                 </ul>
             </div>
-            <!-- <div class="flex justify-end items-center gap-5">
-                <a href="" class="flex justify-center items-center gap-1">
+            <div class="flex justify-end items-center gap-5">
+                <router-link :to="{ name: 'login' }" class="flex justify-center items-center gap-1">
                     <svg class="block" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
                         fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -38,15 +38,15 @@ import { RiUserReceivedLine } from '@remixicon/vue';
                             fill="#F2F8FF" />
                     </svg>
                     <span class="block">Log in</span>
-                </a>
+                </router-link>
                 <GetStartBtn />
-            </div> -->
-            <div class="flex justify-end items-center gap-5">
+            </div>
+            <!-- <div class="flex justify-end items-center gap-5">
                 <a href="" class="flex justify-center items-center gap-1">
                     <RiUserReceivedLine color="rgba(255,255,255,1)" />
                 </a>
                 <GetStartBtn text="Logout" />
-            </div>
+            </div> -->
         </div>
     </nav>
 </template>

@@ -19,13 +19,13 @@ import {
                     <h4>About</h4>
                     <ul>
                         <li class="mt-3">
-                            <a href="" class="!text-xl text-stone-700">Home</a>
+                            <a href="" class="text-xl! text-stone-700">Home</a>
                         </li>
                         <li class="mt-3">
-                            <a href="" class="!text-xl text-stone-700">FAQ</a>
+                            <a href="" class="text-xl! text-stone-700">FAQ</a>
                         </li>
                         <li class="mt-3">
-                            <a href="" class="!text-xl text-stone-700">Contact</a>
+                            <a href="" class="text-xl! text-stone-700">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -33,13 +33,13 @@ import {
                     <h4>Quick Links</h4>
                     <ul>
                         <li class="mt-3">
-                            <a href="" class="!text-xl text-stone-700">Pricing</a>
+                            <a href="" class="text-xl! text-stone-700">Pricing</a>
                         </li>
                         <li class="mt-3">
-                            <a href="" class="!text-xl text-stone-700">Terms of Conditions</a>
+                            <a href="" class="text-xl! text-stone-700">Terms of Conditions</a>
                         </li>
                         <li class="mt-3">
-                            <a href="" class="!text-xl text-stone-700">Privacy Policy</a>
+                            <a href="" class="text-xl! text-stone-700">Privacy Policy</a>
                         </li>
                     </ul>
                 </div>
@@ -50,7 +50,7 @@ import {
             </div>
             <hr class="my-10 border-stone-400">
             <div class="block md:flex justify-between items-center">
-                <p class="text-stone-400 !text-xl">© 2025 Wedloom. All Right Reserved</p>
+                <p class="text-stone-400 text-xl!">© 2025 Wedloom. All Right Reserved</p>
                 <div>
                     <ul class="flex gap-x-5">
                         <li>

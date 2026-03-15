@@ -15,7 +15,7 @@ const props = defineProps({
 
 <template>
     <div class="flex justify-center items-center gap-0">
-        <a href="" class="flex justify-center items-center gap-1 bg-[var(--secondary-color)] px-5 py-2 rounded-3xl">
+        <a href="" class="flex justify-center items-center gap-1 bg-(--secondary-color) px-5 py-2 rounded-3xl">
             <span class="block text-white">{{ text }}</span>
             <svg v-if="icon" class="block" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16"
                 fill="none">
@@ -25,7 +25,7 @@ const props = defineProps({
             </svg>
         </a>
 
-        <a v-if="!icon" href="" class="flex justify-center items-center bg-[var(--secondary-color)] p-3 rounded-full">
+        <a v-if="!icon" href="" class="flex justify-center items-center bg-(--secondary-color) p-3 rounded-full">
             <svg class="block" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16"
                 fill="none">
                 <path
