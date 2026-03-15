@@ -17,7 +17,7 @@ import Logo from '@/assets/image/logo.png'
                         <input type="email" id="email" placeholder="Enter Email Address"
                             class="w-full border border-gray-300 rounded-lg px-3 py-3 mt-1" />
                     </div>
-                    <router-link :to="{ name: 'password-reset' }"
+                    <router-link :to="{ name: 'otp-verify' }"
                         class="btn w-full bg-primary py-4 px-4 text-white flex gap-2 justify-center rounded-4xl mt-4 items-center"
                         type="submit">
                         Submit

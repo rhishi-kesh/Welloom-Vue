@@ -3,6 +3,8 @@ import Login from './pages/Login.vue'
 import Registation from './pages/Registation.vue'
 import ForgotPassword from './pages/ForgotPassword.vue'
 import PasswordReset from './pages/PasswordReset.vue'
+import OTPVerify from './pages/OTPVerify.vue'
+
 export const routes = [
     {
         path: '/',
@@ -28,6 +30,11 @@ export const routes = [
         path: '/password-reset',
         component: PasswordReset,
         name: 'password-reset'
+    },
+    {
+        path: '/otp-verify',
+        component: OTPVerify,
+        name: 'otp-verify'
     },
     {
         path: '/:pathMatch(.*)*',
