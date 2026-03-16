@@ -21,7 +21,7 @@ const faqs = [
 ]
 </script>
 <template>
-    <section class="bg-primary rounded-4xl py-10 my-20">
+    <section class="bg-primary rounded-4xl py-10 my-20" id="faq">
         <div class="container mx-auto">
             <div class="title text-center">
                 <h2 class="text-white mt-1">
@@ -41,7 +41,7 @@ const faqs = [
                 </Accordion>
             </div>
             <div class="mt-5 py-5">
-                <GetStartBtn :icon="false" text="Get Started Now" />
+                <GetStartBtn :icon="false" url="login" text="Get Started Now" />
             </div>
         </div>
     </section>

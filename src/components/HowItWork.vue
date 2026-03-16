@@ -22,7 +22,7 @@ const steps = [
 </script>
 
 <template>
-    <section class="bg-primary rounded-4xl py-10 my-15">
+    <section class="bg-primary rounded-4xl py-10 my-15" id="how-it-works">
         <div class="container mx-auto">
             <div class="title text-center">
                 <p class="text-secondary !text-[16px]">Process</p>

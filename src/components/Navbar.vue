@@ -2,27 +2,33 @@
 import Logo from '@/assets/image/logo.png'
 import GetStartBtn from '@/sm_components/GetStartBtn.vue';
 import { RiUserReceivedLine } from '@remixicon/vue';
+
+const scrollTo = (id) => {
+  document.getElementById(id).scrollIntoView({
+    behavior: "smooth"
+  });
+}
 </script>
 
 <template>
-    <nav class="py-2 bg-primary text-white font-bold">
+    <nav class="py-2 bg-primary text-white font-bold" id="nav">
         <div class="container flex justify-between items-center mx-auto">
             <div>
-                <img :src="Logo" alt="" width="150">
+                <img :src="Logo" alt="" width="150" @click="scrollTo('nav')">
             </div>
             <div>
                 <ul class="flex justify-center items-center gap-10">
                     <li>
-                        <a href="">How It Works</a>
+                        <a @click="scrollTo('how-it-works')">How It Works</a>
                     </li>
                     <li>
-                        <a href="">Pricing</a>
+                        <a @click="scrollTo('pricing')">Pricing</a>
                     </li>
                     <li>
-                        <a href="">FAQs</a>
+                        <a @click="scrollTo('faq')">FAQs</a>
                     </li>
                     <li>
-                        <a href="">Contact</a>
+                        <a @click="scrollTo('contact')">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -39,7 +45,7 @@ import { RiUserReceivedLine } from '@remixicon/vue';
                     </svg>
                     <span class="block">Log in</span>
                 </router-link>
-                <GetStartBtn />
+                <GetStartBtn url="login"/>
             </div>
             <!-- <div class="flex justify-end items-center gap-5">
                 <a href="" class="flex justify-center items-center gap-1">
@@ -50,3 +56,9 @@ import { RiUserReceivedLine } from '@remixicon/vue';
         </div>
     </nav>
 </template>
+
+<style scoped>
+    a {
+        cursor: pointer;    
+    }
+</style>

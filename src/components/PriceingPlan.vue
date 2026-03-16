@@ -27,7 +27,7 @@ import GetStartBtn from '@/sm_components/GetStartBtn.vue';
                     dicta obcaecati.</p>
             </div>
             <div class="mt-8">
-                <GetStartBtn :icon="false" text="Get Started Now" />
+                <GetStartBtn :icon="false" url="login" text="Get Started Now" />
             </div>
         </div>
     </section>

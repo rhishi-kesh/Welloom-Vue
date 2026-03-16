@@ -12,7 +12,7 @@ const props = defineProps({
 <template>
     <div class="rounded-2xl bg-white p-6 text-center">
         <div class="text-center flex justify-center items-center">
-            <RiCheckFill color="rgba(0,0,0,1)" class="font-bold" />
+             <img :src="icon" alt="icon" width="50">
         </div>
         <h4 class="my-3 font-bold">{{ title }}</h4>
         <p class="text-[17px]! leading-7!">{{ subtitle }}</p>

@@ -22,7 +22,7 @@ const steps = [
 ];
 </script>
 <template>
-    <section class="bg-white py-10 my-15">
+    <section class="bg-white py-10 my-15" id="pricing">
         <div class="container mx-auto">
             <div class="title text-center">
                 <p class="text-secondary !text-[16px]">Pricing</p>
@@ -52,7 +52,7 @@ const steps = [
                 </div>
             </div>
             <div class="mt-5 py-5">
-                <GetStartBtn :icon="false" text="Get Started Now" />
+                <GetStartBtn :icon="false" url="login" text="Get Started Now" />
             </div>
         </div>
     </section>
