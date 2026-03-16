@@ -45,7 +45,7 @@ const scrollTo = (id) => {
                     </svg>
                     <span class="block">Log in</span>
                 </router-link>
-                <GetStartBtn url="login"/>
+                <GetStartBtn url="dashboard"/>
             </div>
             <!-- <div class="flex justify-end items-center gap-5">
                 <a href="" class="flex justify-center items-center gap-1">
