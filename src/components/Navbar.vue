@@ -2,33 +2,29 @@
 import Logo from '@/assets/image/logo.png'
 import GetStartBtn from '@/sm_components/GetStartBtn.vue';
 import { RiUserReceivedLine } from '@remixicon/vue';
-
-const scrollTo = (id) => {
-  document.getElementById(id).scrollIntoView({
-    behavior: "smooth"
-  });
-}
 </script>
 
 <template>
     <nav class="py-2 bg-primary text-white font-bold" id="nav">
         <div class="container flex justify-between items-center mx-auto">
             <div>
-                <img :src="Logo" alt="" width="150" @click="scrollTo('nav')">
+                <router-link :to="{ name: 'home' }">
+                    <img :src="Logo" alt="" width="150">
+                </router-link>
             </div>
             <div>
                 <ul class="flex justify-center items-center gap-10">
                     <li>
-                        <a @click="scrollTo('how-it-works')">How It Works</a>
+                        <router-link to="/#how-it-works">How It Works</router-link>
                     </li>
                     <li>
-                        <a @click="scrollTo('pricing')">Pricing</a>
+                        <router-link to="/#pricing">Pricing</router-link>
                     </li>
                     <li>
-                        <a @click="scrollTo('faq')">FAQs</a>
+                        <router-link to="/#faq">FAQs</router-link>
                     </li>
                     <li>
-                        <a @click="scrollTo('contact')">Contact</a>
+                        <router-link to="/#contact">Contact</router-link>
                     </li>
                 </ul>
             </div>

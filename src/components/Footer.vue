@@ -19,13 +19,13 @@ import {
                     <h4>About</h4>
                     <ul>
                         <li class="mt-3">
-                            <a href="" class="text-xl! text-stone-700">Home</a>
+                            <router-link :to="{ name: 'home' }" class="text-xl! text-stone-700">Home</router-link>
                         </li>
                         <li class="mt-3">
-                            <a href="" class="text-xl! text-stone-700">FAQ</a>
+                            <router-link to="/#faq" class="text-xl! text-stone-700">FAQ</router-link>
                         </li>
                         <li class="mt-3">
-                            <a href="" class="text-xl! text-stone-700">Contact</a>
+                            <router-link to="/#contact" class="text-xl! text-stone-700">Contact</router-link>
                         </li>
                     </ul>
                 </div>
@@ -33,7 +33,7 @@ import {
                     <h4>Quick Links</h4>
                     <ul>
                         <li class="mt-3">
-                            <a href="" class="text-xl! text-stone-700">Pricing</a>
+                            <router-link to="/#how-it-works" class="text-xl! text-stone-700">Pricing</router-link>
                         </li>
                         <li class="mt-3">
                             <router-link to="/dynamic/terms-of-conditions" class="text-xl! text-stone-700">Terms of
@@ -56,27 +56,27 @@ import {
                 <div>
                     <ul class="flex gap-x-5">
                         <li>
-                            <a href="" class="text-black">
+                            <a href="" target="_blank" class="text-black">
                                 <RiFacebookCircleFill color="#E8A08F" />
                             </a>
                         </li>
                         <li>
-                            <a href="" class="text-stone-400 hover:text-blue-500">
+                            <a href="" target="_blank" class="text-stone-400 hover:text-blue-500">
                                 <RiInstagramLine color="#E8A08F" />
                             </a>
                         </li>
                         <li>
-                            <a href="" class="text-stone-400 hover:text-blue-500">
+                            <a href="" target="_blank" class="text-stone-400 hover:text-blue-500">
                                 <RiTwitterXLine color="#E8A08F" />
                             </a>
                         </li>
                         <li>
-                            <a href="" class="text-stone-400 hover:text-blue-500">
+                            <a href="" target="_blank" class="text-stone-400 hover:text-blue-500">
                                 <RiLinkedinBoxFill color="#E8A08F" />
                             </a>
                         </li>
                         <li>
-                            <a>
+                            <a href="" target="_blank">
                                 <RiYoutubeFill color="#E8A08F" />
                             </a>
                         </li>

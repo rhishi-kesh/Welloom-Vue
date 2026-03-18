@@ -8,9 +8,15 @@ import { routes } from './routes';
 const router = createRouter({
   routes,
   history: createWebHistory(),
-  scrollBehavior() {
-    return { x: 0, y: 0 };
-  }
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: 'smooth'
+      }
+    }
+    return { top: 0, left: 0 };
+  },
 });
 
 const app = createApp(App)
