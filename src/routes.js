@@ -4,6 +4,7 @@ import Registation from './pages/Registation.vue'
 import ForgotPassword from './pages/ForgotPassword.vue'
 import PasswordReset from './pages/PasswordReset.vue'
 import OTPVerify from './pages/OTPVerify.vue'
+import DynamicPage from './pages/DynamicPage.vue'
 
 export const routes = [
     {
@@ -35,6 +36,11 @@ export const routes = [
         path: '/otp-verify',
         component: OTPVerify,
         name: 'otp-verify'
+    },
+    {
+        path: '/dynamic/:page',
+        component: DynamicPage,
+        name: 'dynamic-page'
     },
     {
         path: '/:pathMatch(.*)*',
