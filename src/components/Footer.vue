@@ -36,10 +36,12 @@ import {
                             <a href="" class="text-xl! text-stone-700">Pricing</a>
                         </li>
                         <li class="mt-3">
-                            <a href="" class="text-xl! text-stone-700">Terms of Conditions</a>
+                            <router-link to="/dynamic/terms-of-conditions" class="text-xl! text-stone-700">Terms of
+                                Conditions</router-link>
                         </li>
                         <li class="mt-3">
-                            <a href="" class="text-xl! text-stone-700">Privacy Policy</a>
+                            <router-link to="/dynamic/privacy-policy" class="text-xl! text-stone-700">Privacy
+                                Policy</router-link>
                         </li>
                     </ul>
                 </div>
