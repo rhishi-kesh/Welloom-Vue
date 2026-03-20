@@ -12,7 +12,7 @@ const hasCoverPhoto = ref(false)
 </script>
 
 <template>
-    <div class="text-center my-8 w-full md:w-[50%] m-auto">
+    <div class="text-center my-8 w-full md:w-[50%] m-auto px-4">
         <div class="block md:grid grid-cols-3 gap-6 justify-between items-center">
             <a href="" class="block text-center">
                 <div class="bg-primary text-secondary p-4 rounded text-center flex flex-col items-center gap-1">
@@ -26,7 +26,7 @@ const hasCoverPhoto = ref(false)
                     <p class="text-lg text-secondary!">Preview as guest</p>
                 </div>
             </a>
-            <a href="" class="block text-center">
+            <a href="" class="block text-center mt-2 md:mt-0">
                 <div
                     class="bg-white text-primary border border-primary p-4 rounded text-center flex flex-col items-center gap-1">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -41,7 +41,7 @@ const hasCoverPhoto = ref(false)
                     <p class="text-lg text-primary!">Preview as guest</p>
                 </div>
             </a>
-            <div @click="settingPopUp()" class="block text-center cursor-pointer">
+            <div @click="settingPopUp()" class="block text-center cursor-pointer mt-2 md:mt-0">
                 <div
                     class="bg-white text-primary border border-primary p-4 rounded text-center flex flex-col items-center gap-1">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"

@@ -30,7 +30,7 @@ const comments = ref([
 </script>
 
 <template>
-    <div class="w-full p-15 bg-white shadow-2xl rounded-2xl">
+    <div class="w-full bg-white shadow-2xl rounded-2xl px-4 py-10 md:px-15 md:py-15">
         <h4 class="text-4xl! font-semibold mb-2 text-center">Comments</h4>
         <div class="space-y-4 mt-6">
             <div class="bg-white p-3 rounded shadow-md" @click="handleActiveComment(comment.id)"

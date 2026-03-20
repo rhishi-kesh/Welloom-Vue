@@ -24,10 +24,10 @@ import EventInfoBtn from '@/components/EventInfoBtn.vue';
             <EventOTP />
             <!-- <LeaveComment /> -->
             <!-- <AddCoverPhoto /> -->
-            <EventName :Editing="false" />
+            <EventName :Editing="true" />
             <EventFileUpload />
             <EventInfoBtn />
-            <!-- <EventImages :Blur="true" /> -->
+            <EventImages :Blur="false" />
             <ShowComment />
         </div>
     </section>

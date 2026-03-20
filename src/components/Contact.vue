@@ -4,10 +4,10 @@ import GetStartBtn from "@/components/ui/GetStartBtn.vue";
 
 </script>
 <template>
-    <section class="bg-white rounded-4xl py-10 my-20" id="contact">
-        <div class="container mx-auto shadow p-10 rounded-2xl">
+    <section class="bg-white rounded-4xl py-5 md:py-10 my-5 md:my-20" id="contact">
+        <div class="container mx-auto shadow p-5 md:p-10 px-4 rounded-2xl">
             <div class="title text-center">
-                <h2 class="text-white mt-1">
+                <h2 class="text-white mt-1 text-3xl! md:text-[50px]!">
                     <b class="text-primary">Contact Us</b>
                 </h2>
             </div>

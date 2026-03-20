@@ -21,20 +21,21 @@ const faqs = [
 ]
 </script>
 <template>
-    <section class="bg-primary rounded-4xl py-10 my-20" id="faq">
-        <div class="container mx-auto">
+    <section class="bg-primary rounded-4xl py-5 md:py-10 my-5 md:my-20" id="faq">
+        <div class="container mx-auto px-4">
             <div class="title text-center">
-                <h2 class="text-white mt-1">
+                <h2 class="text-white mt-1 text-3xl! md:text-[50px]!">
                     <b class="text-white!">Frequently Asked <i>Questions</i></b>
                 </h2>
-                <p class="text-white! text-base!">Here are answers to some of our most frequently asked questions.</p>
+                <p class="text-white! text-sm! md:text-[22px]!">Here are answers to some of our most
+                    frequently asked questions.</p>
             </div>
-            <div class="bg-white! p-5 mt-15 rounded-2xl">
+            <div class="bg-white! p-5 mt-5 md:mt-15 rounded-2xl">
                 <Accordion type="single" collapsible>
                     <AccordionItem :value="`item-${index}`" v-for="(faq, index) in faqs" :key="index">
-                        <AccordionTrigger class="text-xl! text-stone-500 hover:text-primary">{{
+                        <AccordionTrigger class="text-md! md:text-xl! text-stone-500 hover:text-primary">{{
                             faq.question }}</AccordionTrigger>
-                        <AccordionContent>
+                        <AccordionContent class="text-sm md:text-md">
                             {{ faq.answer }}
                         </AccordionContent>
                     </AccordionItem>

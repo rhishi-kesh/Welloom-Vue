@@ -3,7 +3,7 @@ import OTPPad2 from '@/components/ui/OTPPad2.vue';
 import { RiArrowRightUpLine } from "@remixicon/vue";
 </script>
 <template>
-    <div class="text-center my-8 w-full md:w-[30%] m-auto">
+    <div class="text-center my-8 w-full md:w-[30%] m-auto px-4">
         <b class="text-2xl">Enter The Code</b>
         <OTPPad2 class="mt-6" />
         <button

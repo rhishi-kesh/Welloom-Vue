@@ -22,14 +22,16 @@ const steps = [
 </script>
 
 <template>
-    <section class="bg-primary rounded-4xl py-10 my-15" id="how-it-works">
-        <div class="container mx-auto">
+    <section class="bg-primary rounded-4xl py-5 md:py-10 my-5 md:my-15" id="how-it-works">
+        <div class="container mx-auto px-4">
             <div class="title text-center">
                 <p class="text-secondary text-[16px]!">Process</p>
-                <h2 class="text-white mt-1">
+                <h2 class="text-white mt-1 text-3xl! md:text-[50px]!">
                     <b class="text-white!">How It <i>Works</i></b>
                 </h2>
-                <p class="text-white! w-100 md:w-[35%] m-auto mt-1 text-[16px]!">With just a few clicks, create a
+                <p class="text-white! w-full md:w-[35%] m-auto mt-1 text-sm! md:text-[16px]!">With just a few
+                    clicks,
+                    create a
                     private album to
                     capture,
                     store,
@@ -41,7 +43,7 @@ const steps = [
                 <StepCard v-for="(step, index) in steps" :key="index" :icon="step.icon" :title="step.title"
                     :subtitle="step.subtitle" />
             </div>
-            <div class="w-full mt-8">
+            <div class="w-full mt-5 md:mt-8">
                 <img :src="StepImage" alt="">
             </div>
         </div>

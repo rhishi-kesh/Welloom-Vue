@@ -63,6 +63,6 @@ function checkOTP() {
     <div ref="container" class="flex gap-4 items-center justify-center">
         <input type="text" v-for="n in length" :key="n" maxlength="1" @keyup="(e) => handleEnter(e, n - 1)"
             v-model="otpArray[n - 1]"
-            class="w-25 h-15 border underline border-gray-300 text-center text-xl focus:outline-none focus:ring-2 focus:ring-primary rounded-[10px]">
+            class="w-16 md:w-25 h-11 md:h-15 border underline border-gray-300 text-center text-xl focus:outline-none focus:ring-2 focus:ring-primary rounded-[10px]">
     </div>
 </template>

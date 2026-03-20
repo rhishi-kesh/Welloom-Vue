@@ -16,16 +16,16 @@ function DeletePopUp(id) {
 }
 </script>
 <template>
-    <div>
+    <div class="px-4">
         <p class="my-8 text-center">It appears that this gallery is empty. When photos or videos are uploaded,
             they will be
             shown here.</p>
         <div class="w-full block md:grid grid-cols-3 gap-3 relative" :class="Blur ? 'blur-sm' : ''">
             <div v-if="Blur" class="absolute top-0 left-0 w-full h-full bg-white/50 z-20"></div>
-            <div v-for="i in 9" :key="i" class="relative">
+            <div v-for="i in 9" :key="i" class="relative mt-2 md:mt-0">
                 <img :src="Image" alt="Image" class="w-full h-125 object-cover rounded">
                 <button
-                    class="flex gap-1 text-xl rounded-4xl border border-white px-11 font-bold py-3 absolute bottom-11 left-41 text-white cursor-pointer"
+                    class="flex gap-1 text-xl rounded-4xl border border-white px-11 font-bold py-3 absolute bottom-11 left-20 md:left-41 text-white cursor-pointer"
                     @click="DeletePopUp(i)">
                     Delete
                     <RiArrowRightUpLine />
