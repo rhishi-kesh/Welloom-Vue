@@ -27,6 +27,12 @@
   --color-secondary: var(--secondary);
   --color-background: var(--background);
   --color-black: var(--black);
+  --container-padding: 1rem;
+  --container-max-width-sm: 640px;
+  --container-max-width-md: 768px;
+  --container-max-width-lg: 1024px;
+  --container-max-width-xl: 1280px;
+  --container-max-width-2xl: 1536px;
   --color-foreground: var(--foreground);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
@@ -63,6 +69,7 @@
   --color-sidebar-ring: var(--sidebar-ring);
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
+
   @keyframes accordion-down {
   from {
     height: 0;
@@ -71,6 +78,7 @@
     height: var(--reka-accordion-content-height);
     }
   }
+
   @keyframes accordion-up {
   from {
     height: var(--reka-accordion-content-height);
