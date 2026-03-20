@@ -41,7 +41,7 @@ import { RiUserReceivedLine } from '@remixicon/vue';
                     </svg>
                     <span class="block">Log in</span>
                 </router-link>
-                <GetStartBtn url="dashboard"/>
+                <GetStartBtn url="/dashboard" />
             </div>
             <!-- <div class="flex justify-end items-center gap-5">
                 <a href="" class="flex justify-center items-center gap-1">
@@ -54,7 +54,7 @@ import { RiUserReceivedLine } from '@remixicon/vue';
 </template>
 
 <style scoped>
-    a {
-        cursor: pointer;    
-    }
+a {
+    cursor: pointer;
+}
 </style>
