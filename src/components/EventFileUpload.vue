@@ -1,6 +1,7 @@
 <script setup>
 import { ref, computed } from 'vue';
 import { RiArrowRightUpLine } from "@remixicon/vue";
+import Image from '../assets/image/image1.png';
 
 const props = defineProps({
     Editing: {
@@ -15,18 +16,34 @@ const save = () => {
     isEditing.value = false
 }
 
-const fileInput = ref(null);
+const fileInput = ref(null)
 const files = ref([])
+const previews = ref([])
+
 const openFilePicker = () => {
-    fileInput.value.click();
+    fileInput.value?.click()
 }
+
 const handleFileChange = (event) => {
-    const selectedFiles = event.target.files;
+    const selectedFiles = event.target.files
     if (!selectedFiles.length) return
 
     files.value = Array.from(selectedFiles)
+
+    previews.value = files.value.map(file => {
+        return window.URL.createObjectURL(file)
+    })
+
 }
 const fileCount = computed(() => files.value.length);
+
+const removeImage = (index) => {
+    window.URL.revokeObjectURL(previews.value[index])
+
+    previews.value.splice(index, 1)
+    files.value.splice(index, 1)
+}
+
 </script>
 <template>
     <div v-if="!isEditing" class="flex justify-center gap-1 items-center mt-8 text-primary! font-bold">
@@ -48,7 +65,7 @@ const fileCount = computed(() => files.value.length);
             Save
         </button>
     </div>
-    <div>
+    <div class="relative">
         <input type="file" ref="fileInput" class="hidden" accept="image/*,video/*" multiple
             @change="handleFileChange" />
         <div class="text-center mt-8 w-full bg-primary text-white p-8 outline-dashed outline-2 outline-primary flex flex-col items-center justify-center gap-5 cursor-pointer"
@@ -63,9 +80,30 @@ const fileCount = computed(() => files.value.length);
             </svg>
             <b class="text-white! text-2xl">Click to upload image/video</b>
         </div>
-        <p v-if="fileCount > 0" class="text-left text-primary!">
-            {{ fileCount }} file{{ fileCount > 1 ? 's' : '' }} selected
-        </p>
+        <div class="absolute bg-white z-10 top-35 left-60 p-5 w-full md:w-250 rounded" v-if="fileCount > 0">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-h-200 overflow-scroll">
+                <div v-for="(image, index) in previews" :key="index" class="relative">
+                    <img :src="image" alt="preview" class="w-full h-75 object-cover rounded">
+                    <div class="absolute bg-transparent border-white border text-white  p-2 z-10 right-3 top-3 rounded-[50%] cursor-pointer"
+                        @click="removeImage(index)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-x">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M18 6l-12 12" />
+                            <path d="M6 6l12 12" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 flex justify-center">
+                <button class="btn bg-secondary text-white py-4 px-8 flex rounded-4xl cursor-pointer"
+                    @click="submitFiles">
+                    <span class="me-2">Upload</span>
+                    <RiArrowRightUpLine />
+                </button>
+            </div>
+        </div>
     </div>
     <div class="text-center my-10 w-full md:w-[30%] m-auto">
         <div class="flex justify-between items-center gap-2">
