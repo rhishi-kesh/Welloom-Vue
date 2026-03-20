@@ -6,6 +6,7 @@ import EventInformation from '@/components/EventInformation.vue';
 import EventImages from '@/components/EventImages.vue';
 import EventFileUpload from '@/components/EventFileUpload.vue';
 import LeaveComment from '@/components/LeaveComment.vue';
+import AddCoverPhoto from '@/components/AddCoverPhoto.vue';
 import { ref, computed } from 'vue';
 
 const fileInput = ref(null);
@@ -32,6 +33,7 @@ const fileCount = computed(() => files.value.length);
             <QRCode />
             <EventInformation />
             <!-- <LeaveComment /> -->
+            <!-- <AddCoverPhoto /> -->
             <EventFileUpload :Editing="false" />
             <EventImages :Blur="true" />
         </div>
