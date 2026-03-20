@@ -1,5 +1,15 @@
 <script setup>
 import QR from '../assets/image/qr.png';
+import { SwitchRoot, SwitchThumb } from 'reka-ui';
+import { ref } from 'vue';
+
+const SettingStatus = ref(false);
+function settingPopUp() {
+    SettingStatus.value = true;
+}
+
+const allowDownload = ref(false)
+const hasCoverPhoto = ref(false)
 </script>
 <template>
     <div class="text-center p-8 w-full md:w-[50%] m-auto border-primary border">
@@ -88,7 +98,7 @@ import QR from '../assets/image/qr.png';
                     <p class="text-lg text-primary!">Preview as guest</p>
                 </div>
             </a>
-            <a href="">
+            <div @click="settingPopUp()" class="block text-center cursor-pointer">
                 <div
                     class="bg-white text-primary border border-primary p-4 rounded text-center flex flex-col items-center gap-1">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -101,7 +111,52 @@ import QR from '../assets/image/qr.png';
                     </svg>
                     <p class="text-lg text-primary!">Setting</p>
                 </div>
-            </a>
+            </div>
+        </div>
+    </div>
+    <div class="fixed top-0 left-0 right-0 bottom-0 w-full h-screen bg-primary/70 z-50 flex items-center justify-center"
+        v-if="SettingStatus">
+        <div class="bg-white ps-10 pe-25 py-8 rounded-2xl relative">
+            <h4 class="font-bold">Gallery Settings</h4>
+            <div class="flex justify-start items-center mt-4">
+                <div>
+                    <SwitchRoot id="airplane-mode" v-model="allowDownload" name="allow-download"
+                        class="w-8 h-5 shadow-sm flex data-[state=unchecked]:bg-stone-300 data-[state=checked]:bg-stone-800 dark:data-[state=unchecked]:bg-stone-800 dark:data-[state=checked]:bg-stone-700 border border-stone-300 data-[state=checked]:border-stone-700  dark:border-stone-700 rounded-full relative transition-[background] focus-within:outline-none focus-within:shadow-[0_0_0_1px] focus-within:border-stone-800 focus-within:shadow-stone-800">
+                        <SwitchThumb
+                            class="w-3.5 h-3.5 my-auto bg-white text-xs flex items-center justify-center shadow-xl rounded-full transition-transform translate-x-0.5 will-change-transform data-[state=checked]:translate-x-full" />
+                    </SwitchRoot>
+                </div>
+                <div>
+                    <p class="text-primary! ms-2 text-md!">Guests can download photos</p>
+                </div>
+            </div>
+            <div class="flex justify-start items-center mt-1">
+                <div>
+                    <SwitchRoot id="airplane-mode" v-model="hasCoverPhoto" name="has-cover-photo"
+                        class="w-8 h-5 shadow-sm flex data-[state=unchecked]:bg-stone-300 data-[state=checked]:bg-stone-800 dark:data-[state=unchecked]:bg-stone-800 dark:data-[state=checked]:bg-stone-700 border border-stone-300 data-[state=checked]:border-stone-700  dark:border-stone-700 rounded-full relative transition-[background] focus-within:outline-none focus-within:shadow-[0_0_0_1px] focus-within:border-stone-800 focus-within:shadow-stone-800">
+                        <SwitchThumb
+                            class="w-3.5 h-3.5 my-auto bg-white text-xs flex items-center justify-center shadow-xl rounded-full transition-transform translate-x-0.5 will-change-transform data-[state=checked]:translate-x-full" />
+                    </SwitchRoot>
+                </div>
+                <div>
+                    <p class="text-primary! ms-2 text-md!">Add a cover photo</p>
+                </div>
+            </div>
+            <div class="flex justify-center items-center gap-3 mt-6">
+                <button class="py-2 rounded-[10px] px-8 text-white bg-secondary cursor-pointer"
+                    @click="SettingStatus = false">Cancel</button>
+                <button
+                    class="py-2 rounded-[10px] px-8 text-secondary bg-white border border-secondary cursor-pointer">Save</button>
+            </div>
+            <button class="text-stone-400 absolute right-5 top-4 cursor-pointer" @click="SettingStatus = false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-x">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M18 6l-12 12" />
+                    <path d="M6 6l12 12" />
+                </svg>
+            </button>
         </div>
     </div>
 </template>
