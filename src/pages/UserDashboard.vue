@@ -7,6 +7,7 @@ import EventImages from '@/components/EventImages.vue';
 import EventFileUpload from '@/components/EventFileUpload.vue';
 import LeaveComment from '@/components/LeaveComment.vue';
 import AddCoverPhoto from '@/components/AddCoverPhoto.vue';
+import ShowComment from '@/components/ShowComment.vue';
 import { ref, computed } from 'vue';
 
 const fileInput = ref(null);
@@ -35,7 +36,8 @@ const fileCount = computed(() => files.value.length);
             <!-- <LeaveComment /> -->
             <!-- <AddCoverPhoto /> -->
             <EventFileUpload :Editing="false" />
-            <EventImages :Blur="true" />
+            <!-- <EventImages :Blur="true" /> -->
+            <ShowComment />
         </div>
     </section>
     <Footer />
