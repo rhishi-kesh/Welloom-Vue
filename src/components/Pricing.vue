@@ -1,5 +1,5 @@
 <script setup>
-import GetStartBtn from "@/components/ui/accordion/GetStartBtn.vue";
+import GetStartBtn from "@/components/ui/GetStartBtn.vue";
 const steps = [
     {
         text: "QR code & private site",
@@ -25,12 +25,12 @@ const steps = [
     <section class="bg-white py-10 my-15" id="pricing">
         <div class="container mx-auto">
             <div class="title text-center">
-                <p class="text-secondary !text-[16px]">Pricing</p>
+                <p class="text-secondary text-[16px]!">Pricing</p>
                 <h2 class="text-white mt-1">
                     <b class="text-primary">Our Pricing <i>Plan</i></b>
                 </h2>
             </div>
-            <div class="bg-[var(--bg-color)] rounded-4xl p-20 mt-10">
+            <div class="bg-[#FFF6F4] rounded-4xl p-20 mt-10">
                 <h2 class="text-center">$40</h2>
                 <p class="text-center">(5-Day Upload Access From Date Of Launch)</p>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 mt-5">

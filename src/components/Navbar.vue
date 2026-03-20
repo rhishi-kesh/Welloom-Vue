@@ -1,6 +1,6 @@
 <script setup>
 import Logo from '@/assets/image/logo.png'
-import GetStartBtn from '@/components/ui/accordion/GetStartBtn.vue';
+import GetStartBtn from '@/components/ui/GetStartBtn.vue';
 import { RiUserReceivedLine } from '@remixicon/vue';
 </script>
 

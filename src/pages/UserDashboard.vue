@@ -8,19 +8,18 @@ import EventFileUpload from '@/components/EventFileUpload.vue';
 import LeaveComment from '@/components/LeaveComment.vue';
 import AddCoverPhoto from '@/components/AddCoverPhoto.vue';
 import ShowComment from '@/components/ShowComment.vue';
-import { ref, computed } from 'vue';
 </script>
 
 <template>
     <Navbar />
     <section class="py-5 md:py-20 bg-white">
         <div class="container mx-auto">
-            <!-- <QRCode /> -->
-            <!-- <EventInformation /> -->
+            <QRCode />
+            <EventInformation />
             <LeaveComment />
-            <!-- <AddCoverPhoto /> -->
+            <AddCoverPhoto />
             <EventFileUpload :Editing="false" />
-            <!-- <EventImages :Blur="true" /> -->
+            <EventImages :Blur="true" />
             <ShowComment />
         </div>
     </section>
