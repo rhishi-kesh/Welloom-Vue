@@ -2,7 +2,7 @@
 import { RiArrowRightUpLine } from "@remixicon/vue";
 import LoginBGImage from '@/assets/image/login_image.jpg';
 import Logo from '@/assets/image/logo.png';
-import OTPPad from '@/sm_components/OTPPad.vue';
+import OTPPad from '@/components/ui/OTPPad.vue';
 import { ref } from "vue";
 
 const OTPValue = ref('');

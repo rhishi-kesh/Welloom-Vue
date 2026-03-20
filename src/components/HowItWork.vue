@@ -1,6 +1,6 @@
 <script setup>
 import StepImage from '@/assets/image/image3.png'
-import StepCard from '@/sm_components/StepCard.vue';
+import StepCard from '@/components/ui/StepCard.vue';
 
 const steps = [
     {
@@ -25,11 +25,11 @@ const steps = [
     <section class="bg-primary rounded-4xl py-10 my-15" id="how-it-works">
         <div class="container mx-auto">
             <div class="title text-center">
-                <p class="text-secondary !text-[16px]">Process</p>
+                <p class="text-secondary text-[16px]!">Process</p>
                 <h2 class="text-white mt-1">
-                    <b class="!text-white">How It <i>Works</i></b>
+                    <b class="text-white!">How It <i>Works</i></b>
                 </h2>
-                <p class="!text-white w-100 md:w-[35%] m-auto mt-1 !text-[16px]">With just a few clicks, create a
+                <p class="text-white! w-100 md:w-[35%] m-auto mt-1 text-[16px]!">With just a few clicks, create a
                     private album to
                     capture,
                     store,

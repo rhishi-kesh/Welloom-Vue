@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
-import GetStartBtn from "@/sm_components/GetStartBtn.vue";
+import GetStartBtn from "@/components/ui/accordion/GetStartBtn.vue";
 const faqs = [
     {
         question: "Is it accessible?",

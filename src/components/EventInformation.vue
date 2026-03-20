@@ -1,5 +1,5 @@
 <script setup>
-import OTPPad2 from '@/sm_components/OTPPad2.vue';
+import OTPPad2 from '@/components/ui/OTPPad2.vue';
 import { RiArrowRightUpLine } from "@remixicon/vue";
 </script>
 <template>

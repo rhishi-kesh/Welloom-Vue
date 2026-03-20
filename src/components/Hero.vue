@@ -1,6 +1,6 @@
 <script setup>
 import HeroImage from '@/assets/image/image4.png'
-import GetStartBtn from '@/sm_components/GetStartBtn.vue';
+import GetStartBtn from '@/components/ui/accordion/GetStartBtn.vue';
 </script>
 
 <template>

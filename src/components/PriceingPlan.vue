@@ -1,5 +1,5 @@
 <script setup>
-import GetStartBtn from '@/sm_components/GetStartBtn.vue';
+import GetStartBtn from '@/components/ui/accordion/GetStartBtn.vue';
 </script>
 
 <template>
